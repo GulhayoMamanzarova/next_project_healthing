@@ -1,0 +1,106 @@
+.well {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-bg;
+    text-align: center;
+    border-radius: 1.2rem;
+    padding-bottom: 3rem;
+    margin-top: 3.6rem;
+
+    h6 {
+        color: $color-text-primary;
+        font-size: 4rem;
+        font-weight: 600;
+        line-height: 6.2rem;
+        margin-top: 6.4rem;
+    }
+
+    .well-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .well_card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 6rem;
+
+            .img-card {
+                padding: 1.4rem 1.6rem;
+                border-radius: 0.9rem;
+                background-color: $color-btn;
+            }
+
+            p {
+                margin-top: 2rem;
+                max-width: 25.5rem;
+                color: $color-text-primary;
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+            }
+        }
+    }
+
+    .well-img {
+        display: none;
+    }
+}
+
+@media screen and (min-width:840px) {
+    .well {
+        max-width: 88.4rem;
+
+        h6 {
+            font-size: 5.5rem;
+        }
+
+        .well-cards {
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 5.3rem;
+            max-width: 60rem;
+            margin-bottom: 6.4rem;
+
+            .well_card {
+                max-width: 26.8rem;
+                margin-top: 5rem;
+            }
+        }
+
+        p {
+            font-size: 1.3rem;
+        }
+    }
+}
+
+@media screen and (min-width:1440px){
+    .well{
+        max-width: 130rem;
+        flex-direction: row;
+        gap: 15rem;
+
+        h6{
+            font-size: 3.7rem;
+        }
+
+        .left-text{
+            margin-left: 11.2rem;
+
+            .well-cards{
+                .well_card{
+                    align-items: start;
+                    p{
+                        text-align: start;
+                    }
+                }
+            }
+        }
+
+        .well-img{
+            display: block;
+            margin-top: 11rem;
+        }
+    }
+}

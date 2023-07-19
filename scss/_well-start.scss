@@ -1,0 +1,84 @@
+.well-start {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/well-bg-img.svg);
+    margin-top: 3.7rem;
+    background-size: cover;
+    object-fit: cover;
+    text-align: center;
+    gap: 1.3rem;
+    border-radius: 1.2rem;
+
+    .start-img {
+        border: 2px solid #FFF;
+        margin-top: 7.1rem;
+        width: 4.6rem;
+        padding: 0.7rem;
+        border-radius: 0.7rem 1.2rem;
+    }
+
+    h3 {
+        width: 23.6rem;
+        color: #fff;
+        font-size: 2.5rem;
+        font-weight: 600;
+        line-height: 3.1rem;
+    }
+
+    p {
+        display: none;
+    }
+
+    button {
+        border: 2px solid #FFF;
+        background: none;
+        color: #fff;
+        font-size: 1.633rem;
+        font-weight: 600;
+        line-height: 2.4rem;
+        width: 19.8rem;
+        padding: 1.4rem;
+        border-radius: 6.7rem;
+        margin-bottom: 7.1rem;
+    }
+}
+
+@media screen and (min-width:840px) {
+    .well-start {
+        h3 {
+            width: 64rem;
+        }
+
+        p{
+            display: block;
+            color: #fff;
+            width: 65rem;
+            font-size: 1.6rem;
+            line-height: 150%;
+            margin-bottom: 2.8rem;
+        }
+    }
+}
+
+@media screen and (min-width:1440px){
+    .well-start{
+
+        .start-img{
+            margin-top: 11rem;
+        }
+        h3{
+            margin-top: 4.5rem;
+            font-size: 3.8rem;
+        }
+
+        p{
+            margin-top: 1.2rem;
+        }
+
+        button{
+            margin-bottom: 30rem;
+        }
+    }
+}

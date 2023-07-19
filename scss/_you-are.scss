@@ -1,0 +1,87 @@
+.you-are {
+    margin-top: 3.5rem;
+    .you-are-img-text {
+        background-color: $color-bg;
+        border-radius: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .you-are_img {
+            display: none;
+        }
+
+        .you-are_text {
+            h2 {
+                color: $color-primary;
+                font-size: 5rem;
+                font-weight: 600;
+                line-height: 4.7rem;
+                margin-top: 6.4rem;
+            }
+        }
+    }
+
+    .you-are_cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4.1rem;
+
+        .you-are-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .img-you-are {
+                max-width: 5.8rem;
+                padding: 1.4rem 1.6rem;
+                border-radius: 0.9rem;
+                background-color: $color-secondary;
+            }
+
+            p {
+                width: 28.1rem;
+                margin-top: 2rem;
+                margin-bottom: 4.1rem;
+                font-size: 1.5rem;
+                line-height: 2.4rem;
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width:840px){
+    .you-are{
+        .you-are_cards{
+            flex-direction: row;
+            gap: 4rem;
+        }
+    }
+}
+
+@media screen and (min-width:1440px){
+    .you-are{
+        .you-are-img-text{
+            max-width: 100%;
+            flex-direction: row;
+            justify-content: center;
+            text-align: start;
+            gap: 5rem;
+            .you-are_img{
+                margin-bottom: 5rem;
+                display: block;
+            }
+        }
+    }
+
+    .you-are_cards{
+        .you-are-card{
+            .img-you-are{
+                margin-left: -23rem;
+            }
+        }
+    }
+}
